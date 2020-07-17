@@ -33,7 +33,7 @@ The given Data already was quite cleaned:
 (Reason for Abscence table) :
 ![reason for absenteeismpng](https://github.com/CaruzzoC/ds_absenteeism_proj/blob/master/image/reason%20for%20absenteeismpng.png)
 
-What i did:\
+What i did:
 * Made four clusters for the "Reason for Abscence" feature: Reason_1, Reason_2, Reason_3, Reason_4
   * **Reason_1:** Various Diseases
   * **Reason_2:** Pregnancy and giving birth
