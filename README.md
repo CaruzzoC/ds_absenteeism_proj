@@ -26,18 +26,18 @@ At the end, we would get an answer whether someone will probably be excessively 
 
 ## Data Preprocessing
 
-The given Data already was quite cleaned:\
-* No missing values.\
+The given Data already was quite cleaned:
+* No missing values.
 * the nominal qualitative feature "Reason for Abscence" was already transformed using One-hot encoding.\
 * The same for Education feature.\
 (Reason for Abscence table) :
 ![reason for absenteeismpng](https://github.com/CaruzzoC/ds_absenteeism_proj/blob/master/image/reason%20for%20absenteeismpng.png)
 
 What i did:\
-* Made four clusters for the "Reason for Abscence" feature: Reason_1, Reason_2, Reason_3, Reason_4\
-  * **Reason_1:** Various Diseases\
-  * **Reason_2:** Pregnancy and giving birth\
-  * **Reason_3:** Poisoning\
-  * **Reason_4:** Light diseases\
-* Made a column keeping the month, and a column for the day\
+* Made four clusters for the "Reason for Abscence" feature: Reason_1, Reason_2, Reason_3, Reason_4
+  * **Reason_1:** Various Diseases
+  * **Reason_2:** Pregnancy and giving birth
+  * **Reason_3:** Poisoning
+  * **Reason_4:** Light diseases
+* Made a column keeping the month, and a column for the day
 * Made a column  for Education (not enough of each modality, so clustered in two groups : 1 with Education, 0 without)
