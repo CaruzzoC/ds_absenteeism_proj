@@ -6,8 +6,8 @@ In a society where productivity is key, I did a project in which we could predic
 The goal is to know whether a person present certain characteristics preliminary of an absenteeism.
 
 At the end, we would get an answer whether someone will probably be excessively absent or not :\
-  **0:** will probably not be excessively absent.\
-  **1:** will probably be absent.
+* **0:** will probably not be excessively absent.\
+* **1:** will probably be absent.
 
 ## Summary
 
