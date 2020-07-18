@@ -29,7 +29,8 @@ At the end, we would get an answer whether someone will probably be excessively 
 The given Data already was quite cleaned:
 * No missing values.
 * the nominal qualitative feature "Reason for Abscence" was already transformed using One-hot encoding.
-* The same for Education feature.
+* The same for Education feature.\
+
 (Reason for Abscence table) :
 ![reason for absenteeismpng](https://github.com/CaruzzoC/ds_absenteeism_proj/blob/master/image/reason%20for%20absenteeismpng.png)
 
