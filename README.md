@@ -28,8 +28,8 @@ At the end, we would get an answer whether someone will probably be excessively 
 
 The given Data already was quite cleaned:
 * No missing values.
-* the nominal qualitative feature "Reason for Abscence" was already transformed using One-hot encoding.\
-* The same for Education feature.\
+* the nominal qualitative feature "Reason for Abscence" was already transformed using One-hot encoding.
+* The same for Education feature.
 (Reason for Abscence table) :
 ![reason for absenteeismpng](https://github.com/CaruzzoC/ds_absenteeism_proj/blob/master/image/reason%20for%20absenteeismpng.png)
 
@@ -49,21 +49,21 @@ And so, i transformed the "Absenteeism Time in Hours" feature in a binarry featu
   * **0:** Not excessively absent
   * **1:** Excessively absent
 * Since it's the target, I made sure around half the data is excessively absent, and the other half is not.
-* The features 'Day of the Week', 'Daily Work Load Average', 'Distance to Work' did not have a strong enough weight, so i dropped these features.
+* The features 'Day of the Week', 'Daily Work Load Average', 'Distance to Work' did not have a strong enough weight, so I dropped these features.
 * The data range was sparse from a feature to an other, I then scaled the data excepted the binaries features.
 
 ## Model Building
 
-Firstly, i chose to split my data with the following ratio :
+Firstly, I chose to split my data with the following ratio :
  * **Training data:** 0.8
  * **Test data:** 0.2
 
-The predicted value is binnary, I chose to use a LogisticRegression model to make the predictions. Once the model fit, i watched the coefficient and odds of each features to get a better understandment of their importance.
+The predicted value is binnary, I chose to use a LogisticRegression model to make the predictions. Once the model fit, I watched the coefficient and odds of each features to get a better understandment of their importance.
 ![coeff_odds_table](https://github.com/CaruzzoC/ds_absenteeism_proj/blob/master/image/coeff_odds_table.PNG)
 
 ## Productionization
 
-In this step, I pickled the model i made, and also the custom scaler. This python module i made make the integration easier. With a new data, presenting the same shape as the first one, We fastly can get prediction. Using the absenteism_module methode, the "load_and_clean_data" method, and finally saving the result in a .csv file with the following method "predicted_outputs()".
+In this step, I pickled the model I made, and also the custom scaler. This python module I made, make the integration easier. With a new data, presenting the same shape as the first one, We fastly can get prediction. Using the absenteism_module methode, the "load_and_clean_data" method, and finally saving the result in a .csv file with the following method "predicted_outputs()".
 
 ## Tableau integration
 
